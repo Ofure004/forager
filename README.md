@@ -1,4 +1,4 @@
-# Delivery Route Optimizer
+# Forager: Comparative Analysis Tool for Deliveries
 
 This project figures out the best way to deliver a pile of orders with a limited number of riders — who carries what, and in what order — so the whole run takes as little driving as possible.
 

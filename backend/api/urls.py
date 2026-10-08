@@ -1,7 +1,7 @@
 from django.urls import path
 
-from .views import hello
+from .views import create_route
 
 urlpatterns = [
-    path("hello/", hello),
+    path("routes/", create_route),
 ]

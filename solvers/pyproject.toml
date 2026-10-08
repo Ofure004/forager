@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "solvers"
+version = "0.1.0"
+description = "Routing solver package for forager"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/solvers"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

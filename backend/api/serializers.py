@@ -12,6 +12,10 @@ class RouteRequestSerializer(serializers.Serializer):
     # )
     locations = LocationSerializer(many=True) 
     start = serializers.IntegerField(default=0)
+    algorithm = serializers.ChoiceField(
+    choices=["greedy", "aco"],
+    default="greedy",
+)
 
 
 class RouteResponseSerializer(serializers.Serializer):
@@ -25,3 +29,4 @@ class RouteResponseSerializer(serializers.Serializer):
             child=serializers.FloatField()
         )
     )
+    optimization_time_ms = serializers.FloatField()

@@ -50,33 +50,65 @@ const locations: Location[] = [
 ];
 
 export default function Home() {
-  const [route, setRoute] = useState<RouteResponse | null>(null);
+  const [greedyRoute, setGreedyRoute] = useState<RouteResponse | null>(null);
+  const [acoRoute, setAcoRoute] = useState<RouteResponse | null>(null);
+  const [routeError, setRouteError] = useState<string | null>(null);
   const [selectedAlgorithm, setSelectedAlgorithm] = useState("Greedy");
 
-  const comparisons = route
-    ? [
-        {
-          algorithm: "Greedy",
-          distance: route.total_distance_km,
-          duration: route.duration_minutes,
-          route: route.route,
-        },
-        { algorithm: "ACO", distance: 24.91, duration: 26.8, example: true },
-        { algorithm: "OR-Tools", distance: 24.72, duration: 26.4, example: true },
-      ]
-    : [];
-
   useEffect(() => {
-    createRoute(locations).then((result) => {
-      setRoute(result);
-    });
+    let cancelled = false;
+
+    const handleRouteError = () => {
+      if (!cancelled) {
+        setRouteError("Could not load route results. Check that the API and OSRM are running.");
+      }
+    };
+
+    createRoute(locations, 0, "greedy").then((route) => {
+      if (!cancelled) setGreedyRoute(route);
+    }).catch(handleRouteError);
+
+    createRoute(locations, 0, "aco").then((route) => {
+      if (!cancelled) setAcoRoute(route);
+    }).catch(handleRouteError);
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
+
+  const comparisons = [
+    ...(greedyRoute
+      ? [
+          {
+            algorithm: "Greedy",
+            distance: greedyRoute.total_distance_km,
+            duration: greedyRoute.duration_minutes,
+            optimizationTime: greedyRoute.optimization_time_ms,
+            route: greedyRoute.route,
+          },
+        ]
+      : []),
+    ...(acoRoute
+      ? [
+          {
+            algorithm: "ACO",
+            distance: acoRoute.total_distance_km,
+            duration: acoRoute.duration_minutes,
+            optimizationTime: acoRoute.optimization_time_ms,
+            route: acoRoute.route,
+          },
+        ]
+      : []),
+  ];
+  const selectedRoute = selectedAlgorithm === "ACO" ? acoRoute : greedyRoute;
+
   return (
     <main className="relative h-dvh w-full overflow-hidden">
       <Map center={[3.4219, 6.4281]} zoom={11} className="absolute inset-0">
         <MapControls position="top-right" showZoom showCompass />
 
-        <MapRoute coordinates={route?.geometry ?? []} />
+        <MapRoute coordinates={selectedRoute?.geometry ?? []} />
 
         {locations.map((location) => (
           <MapMarker
@@ -108,13 +140,20 @@ export default function Home() {
         ))}
       </Map>
 
-      {route && (
+      {comparisons.length > 0 && (
         <RouteComparison
           results={comparisons}
           locations={locations}
           selectedAlgorithm={selectedAlgorithm}
           onSelectAlgorithm={setSelectedAlgorithm}
+          greedyReady={greedyRoute !== null}
+          acoReady={acoRoute !== null}
         />
+      )}
+      {routeError && (
+        <div className="absolute left-4 top-4 z-20 max-w-sm rounded-xl border border-red-200 bg-white/95 px-4 py-3 text-sm text-red-700 shadow-xl sm:left-6 sm:top-6">
+          {routeError}
+        </div>
       )}
     </main>
   );

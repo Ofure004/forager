@@ -72,7 +72,32 @@ bun dev
 
 ### OSRM (distance engine)
 
-See [`infra/`](infra/) for setup instructions.
+#### Instructions
+
+OSRM map data and its generated routing files are local assets. They are ignored by Git because they can take up several gigabytes. Each developer needs to download and prepare the map data locally.
+
+1. Install and start [Docker](https://docs.docker.com/get-docker/).
+2. Create the local data directory and download an OpenStreetMap `.osm.pbf` extract that covers the area you need. For the current Lagos setup, use the Nigeria extract from [Geofabrik](https://download.geofabrik.de/africa/nigeria.html). Save it as `infra/osrm/lagos-ogun.osm.pbf`.
+3. From the repository root, prepare the OSRM routing files:
+
+   ```bash
+   docker run --rm -t -v "$(pwd)/infra/osrm:/data" osrm/osrm-backend \
+     osrm-extract -p /opt/car.lua /data/lagos-ogun.osm.pbf
+   docker run --rm -t -v "$(pwd)/infra/osrm:/data" osrm/osrm-backend \
+     osrm-partition /data/lagos-ogun.osrm
+   docker run --rm -t -v "$(pwd)/infra/osrm:/data" osrm/osrm-backend \
+     osrm-customize /data/lagos-ogun.osrm
+   ```
+
+4. Start the OSRM service on port `5001`:
+
+   ```bash
+   docker run --rm -t -i -p 5001:5000 \
+     -v "$(pwd)/infra/osrm:/data" osrm/osrm-backend \
+     osrm-routed --algorithm mld /data/lagos-ogun.osrm
+   ```
+
+Keep that terminal running while using the backend. The backend expects OSRM at `http://localhost:5001` by default. To use a different extract, update the filenames in these commands to match its basename. The downloaded `.osm.pbf` and generated `.osrm*` files stay in `infra/osrm/` and are not committed.
 
 ## License
 

@@ -1,0 +1,360 @@
+{
+  "depot": {
+    "id": "depot-ikeja",
+    "name": "Ikeja City Mall, Alausa",
+    "latitude": 6.61432,
+    "longitude": 3.3578
+  },
+  "deliveries": [
+    {
+      "id": "delivery-001",
+      "name": "Computer Village, Ikeja",
+      "latitude": 6.5942452,
+      "longitude": 3.3402182,
+      "resolved_as": "Computer Village, Ikeja G.R.A, Alausa, Ikeja, Lagos, Nigeria"
+    },
+    {
+      "id": "delivery-002",
+      "name": "Allen Avenue, Ikeja",
+      "latitude": 6.6014325,
+      "longitude": 3.3520642,
+      "resolved_as": "Allen Avenue, Oregun, Alausa, Ikeja, Lagos, 100282, Nigeria"
+    },
+    {
+      "id": "delivery-003",
+      "name": "Opebi, Ikeja",
+      "latitude": 6.5893321,
+      "longitude": 3.3618978,
+      "resolved_as": "Opebi, Ikeja, Lagos, 100281, Nigeria"
+    },
+    {
+      "id": "delivery-005",
+      "name": "Ojodu Berger, Lagos",
+      "latitude": 6.6415639,
+      "longitude": 3.3685088,
+      "resolved_as": "Ojodu Berger, Ikeja, Lagos, 100248, Nigeria"
+    },
+    {
+      "id": "delivery-007",
+      "name": "Abule Egba, Lagos",
+      "latitude": 6.6478943,
+      "longitude": 3.3046224,
+      "resolved_as": "Abule Egba, Alimosho, Lagos, 101232, Nigeria"
+    },
+    {
+      "id": "delivery-008",
+      "name": "Dopemu, Lagos",
+      "latitude": 6.6163576,
+      "longitude": 3.3130585,
+      "resolved_as": "Dopemu, Akowonjo, Agege, Lagos, 102213, Nigeria"
+    },
+    {
+      "id": "delivery-009",
+      "name": "Iyana Ipaja, Lagos",
+      "latitude": 6.6173097,
+      "longitude": 3.2973386,
+      "resolved_as": "Iyana Ipaja, Abule Egba, Alimosho, Lagos, 102213, Nigeria"
+    },
+    {
+      "id": "delivery-010",
+      "name": "Egbeda, Lagos",
+      "latitude": 6.5912072,
+      "longitude": 3.288964,
+      "resolved_as": "Egbeda, Alimosho, Lagos, 102213, Nigeria"
+    },
+    {
+      "id": "delivery-011",
+      "name": "Ikotun, Lagos",
+      "latitude": 6.5522982,
+      "longitude": 3.2682658,
+      "resolved_as": "Ikotun, Alimosho, Lagos, 102214, Nigeria"
+    },
+    {
+      "id": "delivery-012",
+      "name": "Oshodi Transport Interchange, Lagos",
+      "latitude": 6.5566141,
+      "longitude": 3.3527017,
+      "resolved_as": "Oshodi Transport Interchange - Terminal 3, Apapa-Oworonshoki Expressway, Onigbongbo, Ikeja, Lagos, 100232, Nigeria"
+    },
+    {
+      "id": "delivery-013",
+      "name": "Mafoluku, Lagos",
+      "latitude": 6.5595994,
+      "longitude": 3.331992,
+      "resolved_as": "Mafoluku, Oshodi, Oshodi/Isolo, Lagos, 100271, Nigeria"
+    },
+    {
+      "id": "delivery-014",
+      "name": "Ladipo Market, Mushin",
+      "latitude": 6.544484,
+      "longitude": 3.3412075,
+      "resolved_as": "Ladipo Market, Apapa-Oworonshoki Expressway, Mafoluku, Oshodi, Mushin, Lagos, 100271, Nigeria"
+    },
+    {
+      "id": "delivery-015",
+      "name": "Mushin, Lagos",
+      "latitude": 6.5247655,
+      "longitude": 3.3516348,
+      "resolved_as": "Mushin, Lagos, 102215, Nigeria"
+    },
+    {
+      "id": "delivery-016",
+      "name": "Idi Oro, Mushin",
+      "latitude": 6.521856,
+      "longitude": 3.3564119,
+      "resolved_as": "Idi Oro, Mushin, Lagos, 102215, Nigeria"
+    },
+    {
+      "id": "delivery-017",
+      "name": "Jibowu, Lagos",
+      "latitude": 6.5172706,
+      "longitude": 3.3666275,
+      "resolved_as": "Jibowu, Mushin, Lagos, 102215, Nigeria"
+    },
+    {
+      "id": "delivery-021",
+      "name": "Onipanu, Lagos",
+      "latitude": 6.5371923,
+      "longitude": 3.3603349,
+      "resolved_as": "Onipanu, Mushin, Lagos, 102216, Nigeria"
+    },
+    {
+      "id": "delivery-022",
+      "name": "Fadeyi, Lagos",
+      "latitude": 6.5287883,
+      "longitude": 3.361985,
+      "resolved_as": "Fadeyi, Mushin, Lagos, 102216, Nigeria"
+    },
+    {
+      "id": "delivery-023",
+      "name": "Palmgrove, Lagos",
+      "latitude": 6.5417787,
+      "longitude": 3.3674144,
+      "resolved_as": "BRT Palmgrove, Ikorodu Road, Obanikoro, Bariga, Shomolu, Lagos, 100231, Nigeria"
+    },
+    {
+      "id": "delivery-024",
+      "name": "Anthony Village, Lagos",
+      "latitude": 6.5593325,
+      "longitude": 3.368217,
+      "resolved_as": "Anthony Village Road, Anthony, Gbagada, Kosofe, Lagos, 100232, Nigeria"
+    },
+    {
+      "id": "delivery-025",
+      "name": "Maryland, Lagos",
+      "latitude": 6.5771463,
+      "longitude": 3.3661931,
+      "resolved_as": "Maryland, Onigbongbo, Ikeja, Lagos, 100211, Nigeria"
+    },
+    {
+      "id": "delivery-026",
+      "name": "Gbagada, Lagos",
+      "latitude": 6.558073,
+      "longitude": 3.3836208,
+      "resolved_as": "Gbagada, Kosofe, Lagos, 100234, Nigeria"
+    },
+    {
+      "id": "delivery-027",
+      "name": "Ifako, Gbagada",
+      "latitude": 6.565746,
+      "longitude": 3.3874895,
+      "resolved_as": "Ifako, Gbagada, Kosofe, Lagos, 100234, Nigeria"
+    },
+    {
+      "id": "delivery-028",
+      "name": "Bariga, Lagos",
+      "latitude": 6.5407282,
+      "longitude": 3.3880365,
+      "resolved_as": "Bariga, Shomolu, Lagos, 100233, Nigeria"
+    },
+    {
+      "id": "delivery-029",
+      "name": "Somolu, Lagos",
+      "latitude": 6.538356,
+      "longitude": 3.3719309,
+      "resolved_as": "Somolu, Bariga, Shomolu, Lagos, 100231, Nigeria"
+    },
+    {
+      "id": "delivery-030",
+      "name": "Ilupeju, Lagos",
+      "latitude": 6.5550545,
+      "longitude": 3.3592829,
+      "resolved_as": "Ilupeju, Mushin, Lagos, 100232, Nigeria"
+    },
+    {
+      "id": "delivery-031",
+      "name": "Town Planning Way, Ilupeju",
+      "latitude": 6.5568903,
+      "longitude": 3.3584103,
+      "resolved_as": "Town Planning Way, Ilupeju, Mushin, Lagos, 100232, Nigeria"
+    },
+    {
+      "id": "delivery-032",
+      "name": "National Stadium, Surulere",
+      "latitude": 6.4971425,
+      "longitude": 3.364988,
+      "resolved_as": "Lagos National Stadium, National Stadium Complex, Iganmu, Surulere, Lagos, 102215, Nigeria"
+    },
+    {
+      "id": "delivery-033",
+      "name": "Teslim Balogun Stadium, Surulere",
+      "latitude": 6.4997711,
+      "longitude": 3.3607844,
+      "resolved_as": "Teslim Balogun Stadium, Western Avenue, Iganmu, Surulere, Lagos, 102215, Nigeria"
+    },
+    {
+      "id": "delivery-034",
+      "name": "Ojuelegba, Lagos",
+      "latitude": 6.5107689,
+      "longitude": 3.362295,
+      "resolved_as": "Ojuelegba, Mushin, Lagos, 102215, Nigeria"
+    },
+    {
+      "id": "delivery-035",
+      "name": "Lawanson, Surulere",
+      "latitude": 6.5117663,
+      "longitude": 3.3452987,
+      "resolved_as": "Lawanson Road, Surulere, Lagos, 102215, Nigeria"
+    },
+    {
+      "id": "delivery-036",
+      "name": "Ijesha, Surulere",
+      "latitude": 6.4882076,
+      "longitude": 3.3334,
+      "resolved_as": "Ijesha Tedo, Surulere, Lagos, 102102, Nigeria"
+    },
+    {
+      "id": "delivery-037",
+      "name": "Coker, Surulere",
+      "latitude": 6.4792997,
+      "longitude": 3.3339337,
+      "resolved_as": "Coker, Surulere, Lagos, 102102, Nigeria"
+    },
+    {
+      "id": "delivery-038",
+      "name": "Orile, Lagos",
+      "latitude": 6.4773283,
+      "longitude": 3.3457731,
+      "resolved_as": "Orile Iganmu, Apapa, Lagos, 101212, Nigeria"
+    },
+    {
+      "id": "delivery-039",
+      "name": "Costain, Lagos",
+      "latitude": 6.4818832,
+      "longitude": 3.3692499,
+      "resolved_as": "Costain Bus stop, Western Avenue, Iganmu, Surulere, Lagos, 101241, Nigeria"
+    },
+    {
+      "id": "delivery-040",
+      "name": "Ebute Metta, Lagos",
+      "latitude": 6.4862553,
+      "longitude": 3.3856122,
+      "resolved_as": "Ebute-Metta, Lagos Mainland, Lagos, 100261, Nigeria"
+    },
+    {
+      "id": "delivery-042",
+      "name": "Iddo, Lagos",
+      "latitude": 6.4701718,
+      "longitude": 3.3811132,
+      "resolved_as": "Iddo, Lagos Mainland, Lagos, 101212, Nigeria"
+    },
+    {
+      "id": "delivery-043",
+      "name": "Apapa, Lagos",
+      "latitude": 6.445187,
+      "longitude": 3.3683732,
+      "resolved_as": "Apapa, Lagos, Nigeria"
+    },
+    {
+      "id": "delivery-044",
+      "name": "Ajegunle, Lagos",
+      "latitude": 6.4481563,
+      "longitude": 3.3335102,
+      "resolved_as": "Ajegunle, Alaiyabiagba, Ajeromi/Ifelodun, Lagos, 102102, Nigeria"
+    },
+    {
+      "id": "delivery-045",
+      "name": "Amukoko, Lagos",
+      "latitude": 6.4693654,
+      "longitude": 3.3423906,
+      "resolved_as": "Amukoko, Ajeromi/Ifelodun, Lagos, 102102, Nigeria"
+    },
+    {
+      "id": "delivery-046",
+      "name": "Iganmu, Lagos",
+      "latitude": 6.4824237,
+      "longitude": 3.3641616,
+      "resolved_as": "Iganmu, Surulere, Lagos, 101212, Nigeria"
+    },
+    {
+      "id": "delivery-047",
+      "name": "Ketu, Lagos",
+      "latitude": 6.5928001,
+      "longitude": 3.3917483,
+      "resolved_as": "Ketu, Kosofe, Lagos, 100247, Nigeria"
+    },
+    {
+      "id": "delivery-048",
+      "name": "Mile 12, Lagos",
+      "latitude": 6.6058853,
+      "longitude": 3.3952638,
+      "resolved_as": "Mile 12, Kosofe, Lagos, 100247, Nigeria"
+    },
+    {
+      "id": "delivery-049",
+      "name": "Ojota, Lagos",
+      "latitude": 6.5870705,
+      "longitude": 3.3791462,
+      "resolved_as": "Ojota, Ketu, Kosofe, Lagos, 100212, Nigeria"
+    },
+    {
+      "id": "delivery-050",
+      "name": "Magodo, Lagos",
+      "latitude": 6.6180809,
+      "longitude": 3.3777821,
+      "resolved_as": "Magodo, Shangisha, Kosofe, Lagos, 100248, Nigeria"
+    },
+    {
+      "id": "delivery-004",
+      "name": "Ogba, Ikeja, Lagos",
+      "latitude": 6.6325013,
+      "longitude": 3.3417422,
+      "resolved_as": "Ogba Bus Park, Ijaiye Road, Aguda, Ikeja, Lagos, 100216, Nigeria"
+    },
+    {
+      "id": "delivery-041",
+      "name": "Oyingbo Bus Terminal, Lagos",
+      "latitude": 6.4808916,
+      "longitude": 3.3831724,
+      "resolved_as": "Oyingbo Bus Terminal, Oyingbo Flyover Bridge, Iganmu, Surulere, Lagos, 101212, Nigeria"
+    },
+    {
+      "id": "delivery-020",
+      "name": "University of Lagos, Akoka, Lagos",
+      "latitude": 6.5120272,
+      "longitude": 3.3935314,
+      "resolved_as": "University of Lagos, Kosoko Drive, Akoka, Bariga, Shomolu, Lagos, 100272, Nigeria"
+    },
+    {
+      "id": "delivery-006",
+      "name": "Agege Stadium, Agege, Lagos",
+      "latitude": 6.6235341,
+      "longitude": 3.3300927,
+      "resolved_as": "Agege Stadium, Abeokuta Street, Agege, Lagos, 100282, Nigeria"
+    },
+    {
+      "id": "delivery-019",
+      "name": "Yaba College of Technology, Yaba, Lagos",
+      "latitude": 6.5187275,
+      "longitude": 3.3741408,
+      "resolved_as": "Yaba College of Technology, Herbert Macaulay Way, Yaba, Shomolu, Lagos, 104233, Nigeria"
+    },
+    {
+      "id": "delivery-018",
+      "name": "Iganmu Transit Stop",
+      "latitude": 6.4775109,
+      "longitude": 3.34314,
+      "resolved_as": "Iganmu, Lagos-Badagry Expressway, Coker, Animshaun, Surulere, Lagos, 102102, Nigeria"
+    }
+  ]
+}

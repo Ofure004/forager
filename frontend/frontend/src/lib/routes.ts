@@ -7,12 +7,14 @@ export type RouteResponse = {
   route: number[];
   total_distance_km: number;
   duration_minutes: number;
+  optimization_time_ms: number;
   geometry: [number, number][];
 };
 
 export async function createRoute(
   locations: Location[],
   start = 0,
+  algorithm: "greedy" | "aco" = "greedy",
 ): Promise<RouteResponse> {
   const response = await fetch("http://localhost:8000/api/routes/", {
     method: "POST",
@@ -22,6 +24,7 @@ export async function createRoute(
     body: JSON.stringify({
       locations,
       start,
+      algorithm,
     }),
   });
 

@@ -15,7 +15,11 @@ def create_route(request):
     serializer = RouteRequestSerializer(data=request.data)
     serializer.is_valid(raise_exception=True)
     data = cast(dict[str, Any], serializer.validated_data)
-    route = build_route(data["locations"], data["start"])
+    route = build_route(
+    data["locations"],
+    data["start"],
+    data["algorithm"],
+)
     response_serializer = RouteResponseSerializer(data=route)
     response_serializer.is_valid(raise_exception=True)
     return Response(response_serializer.data)
